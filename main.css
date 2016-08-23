@@ -1,0 +1,12 @@
+h4 {
+  display: block
+}
+
+/*section {
+  display: inline;
+}*/
+
+.wrapper {
+  display: inline-flex;
+  justify-content: center;
+}
