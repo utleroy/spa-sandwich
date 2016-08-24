@@ -9,47 +9,50 @@
 
 <body>
   <h1>IIFE - Sandwich maker</h1>
-<div id="wrapper">
-  <section>Build your sandwich
-    <h4>Bread</h4>
-    <select name="bread">
-      <option>white</option>
-      <option>wheat</option>
-      <option>none</option>
-    </select>
-    <h4>Meat</h4>
-    <select name="meat">
-      <option>turkey</option>
-      <option>bacon</option>
-      <option>none</option>
-    </select>
-    <h4>Cheese</h4>
-    <select name="Cheese">
-      <option>mozzarella</option>
-      <option>cheddar</option>
-      <option>none</option>
-    </select>
-    <h4>condiments</h4>
-    <select name="condiments">
-      <option>ketchup</option>
-      <option>mustard</option>
-      <option>none</option>
-    </select>
-    <h4>veggies</h4>
-    <select name="veggies">
-      <option>banana peppers</option>
-      <option>onions</option>
-      <option>none</option>
-    </select>
-  </section>
+  <div id="wrapper">
+    <section>Build your sandwich
+      <h4>Bread</h4>
+      <div id="breads_selection">
+        <input type="radio" id="white" value="white"> White
+        <input type="radio" id="wheat" value="wheat"> Wheat
+      </div>
+      <h4>Meat</h4>
+      <div id="meat">
+        <input type="radio" id="turkey" value="turkey"> Turkey
+        <input type="radio" id="bacon" value="bacon"> Bacon
+        <input type="radio" id="none" value="none"> None
+      </div>
+      <h4>Cheese</h4>
+      <div id="cheese">
+        <input type="radio" id="mozzarella" value="mozzarella"> Mozzarella
+        <input type="radio" id="swiss" value="swiss"> Swiss
+        <input type="radio" id="none" value="none"> None
+      </div>
+      <h4>condiments</h4>
+      <div id="condiments">
+        <input type="radio" id="ketchup" value="ketchup"> Ketchup
+        <input type="radio" id="mustard" value="mustard"> Mustard
+        <input type="radio" id="none" value="none"> None
+      </div>
+      <h4>veggies</h4>
+      <div id="veggies">
+        <input type="radio" id="tomato" value="tomato"> Tomato
+        <input type="radio" id="lettuce" value="lettuce"> Lettuce
+        <input type="radio" id="none" value="none"> None
+      </div>
+    </section><br>
   </div>
+  <button id="btn">Submit</button>
 
-  <div id="output">Sandwich ready and pricing
+  <textarea id="output">Total Price Here
 
-  </div>
+  </textarea>
   <script src="javascripts/sandwich.js"></script>
-  <script src="javascripts/augmented.js"></script>
-  <script src="javascripts/main.js"></script>
-  <script src="javascripts/view.js"></script>
+   <script src="javascripts/bread.js"></script>
+  <script src="javascripts/meat.js"></script>
+  <script src="javascripts/cheese.js"></script>
+  <script src="javascripts/veggies.js"></script>
+  <script src="javascripts/extras.js"></script>
+  <script src="javascripts/DOM.js"></script>
 </body>
 </html>
